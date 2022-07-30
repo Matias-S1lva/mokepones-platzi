@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@100;400&display=swap");
+body {
+  background-color: rgb(41 52 98);
+  font-family: "League Gothic", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+#reiniciar {
+  display: none;
+}
+#seleccionar-ataque {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  color: rgb(240 248 255);
+  font-size: 36px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 20px;
+  color: rgb(240 248 255);
+}
+
+.tarjetas {
+  display: flex;
+  
+}
+.tarjeta-mokepon {
+  width: 190px;
+  height: 120px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(254 177 57);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+.tarjeta-mokepon img {
+  width: 100px;
+}
+#boton-seleccionar-mascota {
+  font-family: "League Gothic", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(214 28 78);
+  color: rgb(240 248 255);
+  border-style: none;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 180px;
+  
+}
+input {
+   display: none; 
+}
+ input:checked + label {
+  width: 200px;
+  height: 130px;
+  background-color: rgb(214 28 78);
+}
+.combate {
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  justify-content: center;
+  align-items: center;
+}
+.combate .personaje-combate {
+  width: 190px;
+  height:auto;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(254 177 57);
+  box-sizing: border-box;
+}
+.personaje-combate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.personaje-combate img{
+  width: 100px;
+}
+.fin-del-juego {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#boton-reiniciar {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(214 28 78);
+  color: rgb(240 248 255);
+  border-style: none;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  width: 180px;
+}
+.boton-de-ataque {
+  font-family: "League Gothic", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(214 28 78);
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 10px;
+  width: 120px;
+}
+#mensajes{
+    color: rgb(240 248 255);
+    width: 280px;
+    padding: 20px;
+    margin: 10px 0px;
+    background-color: #202020;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 400px){
+  .tarjetas{
+    flex-direction: column;
+  }
+  #botones{
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+  }
+  .combate .personaje-combate {
+    width: 164px;
+    
+  }
+}

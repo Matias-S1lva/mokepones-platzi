@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>MOKEPON</title>
+  </head>
+  <body>
+    <section id="seleccionar-mascota">
+      <h1 class="titulo">Mokepon</h1>
+      <h2 class="subtitulo">Elige a tu mascota:</h2>
+
+      <div id="contenedor-tarjetas" class="tarjetas">
+        <!-- Mokepones -->
+      </div>
+
+      <button id="boton-seleccionar-mascota">Seleccionar</button>
+    </section>
+
+    <section id="seleccionar-ataque">
+      <h1 class="titulo">Mokepon</h1>
+      <h2 class="subtitulo">Elige tu ataque:</h2>
+
+      <div id="botones">
+        <button id="boton-fuego" class="boton-de-ataque" name="boton">
+          Fuego🔥
+        </button>
+        <button id="boton-agua" class="boton-de-ataque" name="boton">
+          Agua💧
+        </button>
+        <button id="boton-rayo" class="boton-de-ataque" name="boton">
+          Rayo⚡
+        </button>
+      </div>
+
+      <div class="fin-del-juego">
+        <section id="mensajes">
+          <p id="resultado">Que comienze la batalla !</p>
+        </section>
+        <section id="reiniciar">
+          <button id="boton-reiniciar">Jugar otra vez</button>
+        </section>
+      </div>
+
+      <div class="combate">
+        <div class="personaje-combate">
+          <span id="vida-jugador">3 </span><span id="mascota-jugador"> </span>
+          <img src="" id="jugador-mascota" alt="" />
+          <p id="ataques-jugador"></p>
+        </div>
+
+        <div class="personaje-combate">
+          <span id="vida-enemigo"> 3 </span><span id="nombre-mascota-enemigo"> </span>
+          <img src="" id="imagen-mascota-enemigo" alt="" />
+          <p id="ataques-enemigo"></p>
+        </div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>
