@@ -32,11 +32,11 @@ body {
   font-size: 20px;
   color: rgb(240 248 255);
 }
-.botones-de-ataque{
+.botones-de-ataque {
   flex-wrap: wrap;
-    justify-content: center;
-    display: flex;
-    gap: 5px;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
 }
 .tarjetas {
   display: flex;
@@ -56,7 +56,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .tarjeta-mokepon img {
   width: 100px;
@@ -72,30 +72,28 @@ body {
   margin-top: 10px;
   border-radius: 20px;
   width: 180px;
-  
 }
 input {
-   display: none; 
+  display: none;
 }
- input:checked + label {
+input:checked + label {
   width: 200px;
   height: 130px;
   background-color: rgb(214 28 78);
 }
 .combate {
-  display: grid;
-  grid-template-columns: 200px 200px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .combate .personaje-combate {
-  width: 190px;
-  height:auto;
-  padding: 10px;
+  width: 185px;
+  height: auto;
+  padding: 20px;
   margin: 5px;
   border-radius: 5px;
   text-align: center;
-  color: aliceblue;
+  color: rgb(240 248 255);
   background-color: rgb(254 177 57);
   box-sizing: border-box;
 }
@@ -105,7 +103,7 @@ input {
   align-items: center;
   justify-content: center;
 }
-.personaje-combate img{
+.personaje-combate img {
   width: 100px;
   height: 100px;
 }
@@ -115,12 +113,12 @@ input {
   justify-content: center;
   align-items: center;
 }
-.ataques p{
+.ataques p {
   background-color: rgb(214 28 78);
-    margin: 5px;
-    padding: 10px;
-    border-radius: 30px;
-    border: 2px solid rgb(41 52 98);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid rgb(41 52 98);
 }
 #boton-reiniciar {
   font-family: "Poppins", sans-serif;
@@ -141,30 +139,26 @@ input {
   padding: 10px;
   width: 120px;
 }
-#mensajes{
-    color: rgb(240 248 255);
-    width: 280px;
-    padding: 20px;
-    margin: 10px 0px;
-    background-color: #202020;
-    border-radius: 20px;
-    text-align: center;
+#mensajes {
+  color: rgb(240 248 255);
+  width: 280px;
+  padding: 20px;
+  margin: 10px 0px;
+  background-color: #202020;
+  border-radius: 20px;
+  text-align: center;
 }
 
-
-
-@media (max-width: 400px){
-  .tarjetas{
+@media (max-width: 400px) {
+  .tarjetas {
     flex-direction: column;
   }
-  #botones{
+  #botones {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 5px;
   }
-  
+
   .combate .personaje-combate {
-    
-    
   }
 }
