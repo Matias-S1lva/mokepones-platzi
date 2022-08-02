@@ -53,6 +53,7 @@ body {
 }
 .tarjeta-mokepon img {
   width: 100px;
+  height: 100px;
 }
 #boton-seleccionar-mascota {
   font-family: "League Gothic", sans-serif;
@@ -76,7 +77,7 @@ input {
 }
 .combate {
   display: grid;
-  grid-template-columns: repeat(2,50%);
+  grid-template-columns: 200px 24px 200px;
   justify-content: center;
   align-items: center;
 }
@@ -97,8 +98,16 @@ input {
   align-items: center;
   justify-content: center;
 }
+.texto-combate{
+  color: aliceblue;
+  height: 100%;
+  width: 24px;
+  
+  justify-content: flex-start;
+}
 .personaje-combate img{
   width: 100px;
+  height: 100px;
 }
 .fin-del-juego {
   display: flex;
