@@ -21,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .titulo {
   margin: 0;
   color: rgb(240 248 255);
@@ -63,15 +64,19 @@ body {
   height: 100px;
 }
 #boton-seleccionar-mascota {
-  font-family: "League Gothic", sans-serif;
   font-family: "Poppins", sans-serif;
   background-color: rgb(214 28 78);
   color: rgb(240 248 255);
   border-style: none;
-  padding: 15px;
-  margin-top: 10px;
+  padding: 10px;
+  margin: 10px 0px;
   border-radius: 20px;
   width: 180px;
+  transition: all .5s;
+}
+#boton-seleccionar-mascota:hover{
+  background: rgb(41 52 98);
+  outline: 2px solid white;
 }
 input {
   display: none;
@@ -114,11 +119,13 @@ input:checked + label {
   align-items: center;
 }
 .ataques p {
-  background-color: rgb(214 28 78);
-  margin: 5px;
-  padding: 10px;
-  border-radius: 30px;
-  border: 2px solid rgb(41 52 98);
+  background-color: rgb(240 248 255);
+  margin: 4px;
+  width: 24px;
+  text-align: center;
+  height: 24px;
+  padding: 8px;
+  border-radius: 22px;
 }
 #boton-reiniciar {
   font-family: "Poppins", sans-serif;
@@ -129,7 +136,13 @@ input:checked + label {
   margin: 10px 0px;
   border-radius: 20px;
   width: 180px;
+  transition: all .5s;
 }
+#boton-reiniciar:hover{
+  background: rgb(41 52 98);
+  outline: 2px solid white;
+}
+
 .boton-de-ataque {
   font-family: "League Gothic", sans-serif;
   font-family: "Poppins", sans-serif;
