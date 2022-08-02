@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@100;400&display=swap");
-body {
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@100;400&family=Rubik:wght@300&family=VT323&display=swap');body {
   background-color: rgb(41 52 98);
   font-family: "League Gothic", sans-serif;
-  font-family: "Poppins", sans-serif;
+  font-family: 'VT323', monospace;
+  background-image: url("assets/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #reiniciar {
   display: none;
@@ -17,7 +19,6 @@ body {
 #seleccionar-mascota {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
 }
@@ -65,7 +66,8 @@ body {
 }
 #boton-seleccionar-mascota {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(214 28 78);
+  background: rgb(41 52 98);
+  outline: 2px solid white;
   color: rgb(240 248 255);
   border-style: none;
   padding: 10px;
@@ -74,9 +76,8 @@ body {
   width: 180px;
   transition: all .5s;
 }
-#boton-seleccionar-mascota:hover{
-  background: rgb(41 52 98);
-  outline: 2px solid white;
+#boton-seleccionar-mascota:active {
+  opacity: .7s;
 }
 input {
   display: none;
