@@ -222,19 +222,19 @@ function combate() {
       crearMensaje(ataqueJugador[i],ataqueAleatorio[i]);
     } else if (ataqueJugador[i] == "⚡" && ataqueAleatorio[i] == "💧") {
       victoriasJugador++;
-      spanVidaJugador.innerText = "VICTORIAS: " + victoriasJugador;
+      spanVidaJugador.innerText = victoriasJugador;
       crearMensaje(ataqueJugador[i],ataqueAleatorio[i]);
     } else if (ataqueJugador[i] == "💧" && ataqueAleatorio[i] == "🔥") {
       victoriasJugador++;
-      spanVidaJugador.innerText = "VICTORIAS: " + victoriasJugador;
+      spanVidaJugador.innerText = victoriasJugador;
       crearMensaje(ataqueJugador[i],ataqueAleatorio[i]);
     } else if (ataqueJugador[i] == "🔥" && ataqueAleatorio[i] == "⚡") {
       victoriasJugador++;
-      spanVidaJugador.innerText = "VICTORIAS: " + victoriasJugador;
+      spanVidaJugador.innerText = victoriasJugador;
       crearMensaje(ataqueJugador[i],ataqueAleatorio[i]);
     } else {
       victoriasEnemigo++;
-      spanVidaEnemigo.innerText = "VICTORIAS: " + victoriasEnemigo;
+      spanVidaEnemigo.innerText = victoriasEnemigo;
       crearMensaje(ataqueJugador[i],ataqueAleatorio[i]);
     }
   }
