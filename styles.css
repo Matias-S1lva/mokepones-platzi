@@ -23,7 +23,7 @@ body {
 }
 .titulo {
   color: rgb(240 248 255);
-  font-size: 36px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -31,10 +31,16 @@ body {
   font-size: 20px;
   color: rgb(240 248 255);
 }
-
+.botones-de-ataque{
+  flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
 .tarjetas {
   display: flex;
-  
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .tarjeta-mokepon {
   width: 190px;
@@ -102,7 +108,6 @@ input {
   color: aliceblue;
   height: 100%;
   width: 24px;
-  
   justify-content: flex-start;
 }
 .personaje-combate img{
@@ -114,6 +119,13 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.ataques p{
+  background-color: rgb(214 28 78);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid rgb(41 52 98);
 }
 #boton-reiniciar {
   font-family: "Poppins", sans-serif;
